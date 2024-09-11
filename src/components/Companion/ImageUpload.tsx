@@ -11,6 +11,7 @@ type Props = {
 };
 
 const ImageUpload = ({ onChange, value, disabled }: Props) => {
+  //avoid hydration errors 
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
